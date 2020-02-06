@@ -1,0 +1,192 @@
+.center {
+display:block;
+margin: auto;
+}
+
+
+.topnav {
+  background-color: #4f5aa8;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #304687;
+  color: Black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #304687;
+  color: white;
+}
+
+
+/* The dropdown 
+  container */
+.dropdown {
+  float: left;
+  
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  
+  border: none;
+  outline: none;
+  color: white;
+  
+  padding: 14px 16px;
+  background-color: #304687;
+  font-family: 
+  inherit; /* Important for vertical align on mobile phones */
+  margin: 
+  0; /* Important for vertical align on mobile phones */
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a 
+  {
+  float: none;
+  color: black;
+  
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  
+  text-align: left;
+}
+
+/* Dropdown content (hidden by default) */
+
+  .dropdown-content {
+  display: 
+  none;
+  position: absolute;
+  background-color: #304687;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+  z-index: 1;
+}
+
+
+/* 
+  Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Add background color to dropdown links 
+  on hover */
+.dropdown-content a:hover {
+  background-color: #4f5aa8;
+}
+
+
+/* styling for right-hand button  */
+
+.button {
+  background-color: #4f5aa8; /* Green */
+  border: none;
+
+ color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  
+text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+display: block;
+width: 70%;
+border: 1px solid #304687;
+ margin: auto;
+
+
+
+}
+
+.button:hover {
+  
+background-color: #304687;
+  color: white;
+
+  display: block;
+width: 70%;
+ margin: auto;
+
+}
+
+
+.bigText {
+
+font-family: 'Ubuntu', sans-serif;
+font-size: 30px;
+color: #304687;
+font-weight: 900;
+ margin: auto;
+
+}
+
+.bigTextL {
+
+font-family: 'Ubuntu', sans-serif;
+font-size: 40px;
+color: #304687;
+font-weight: bold;
+
+}
+
+
+.button2 {
+  background-color: #4f5aa8; /* Green */
+  border: none;
+
+ color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  
+text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+display: block;
+width: 40%;
+border: 1px solid #304687;
+ margin: auto;
+
+
+
+}
+
+.button2:hover {
+  
+  background-color: #304687; 
+  border: none;
+
+ color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  
+text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+display: block;
+width: 40%;
+border: 1px solid #304687;
+ margin: auto;
+
+}
