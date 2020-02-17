@@ -1,3 +1,15 @@
+.aui-progress-tracker-step {
+
+opacity: 30;
+font-size:10px;
+ }
+
+.aui-progress-tracker-step.aui-progress-tracker-step-current {
+
+opacity: 100;
+font-size:10px;
+ }
+
 .center {
 display:block;
 margin: auto;
