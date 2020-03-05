@@ -33,6 +33,7 @@ vertical-align: top;
 
 
 #t0c2B {
+word-wrap: break-word;
   margin: 5px;
 border-radius: 12px;
 padding: 20% 10% 20%;
@@ -41,7 +42,6 @@ background-color: white;
 text-align:center;
 color: black;
 display: block;
-word-wrap: break-word;
 vertical-align: top;
 
 
