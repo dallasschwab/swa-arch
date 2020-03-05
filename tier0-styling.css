@@ -38,6 +38,7 @@ background-color: white;
 text-align:center;
 color: black;
 display: block;
+word-wrap: break-word
 
   }
 
@@ -50,6 +51,7 @@ background-color: #7030a0;
 text-align:center;
 color: white;
 display: block;
+word-wrap: break-word
 
   }
 
