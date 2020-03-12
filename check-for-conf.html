@@ -9,9 +9,8 @@
 (function doesConnectionExist() {
     var xhr = new XMLHttpRequest();
     var file = "https://confluence-tools.swacorp.com/";
-    var randomNum = Math.round(Math.random() * 10000);
  
-    xhr.open('HEAD', file + "?rand=" + randomNum, true);
+    xhr.open('HEAD', file, true);
     xhr.send();
      
     xhr.addEventListener("readystatechange", processRequest, false);
