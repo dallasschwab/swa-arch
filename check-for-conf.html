@@ -20,7 +20,7 @@ xhr.addEventListener("readystatechange", processRequest, false);
    
  
     function processRequest(e) {
-      if (xhr.readyState == 4) {
+      if (xhr.readyState === 4) {
         if (xhr.status >= 200 && xhr.status < 304) {
           alert("connection exists!");
         } else {
