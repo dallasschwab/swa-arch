@@ -15,11 +15,11 @@ xhr.addEventListener("onreadystatechange", processRequest, false);
     var file = "https://confluence-tools.swacorp.com/display/EA";
  
     xhr.open('GET', file, true);
-    xhr.send();
+    
      
    
  
-    function processRequest(e) {
+   xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {
         if (xhr.status >= 200 && xhr.status < 304) {
           alert("connection exists!");
@@ -28,7 +28,9 @@ xhr.addEventListener("onreadystatechange", processRequest, false);
 
         }
       }
-    }
+    };
+
+xhr.send();
 })()
 
 
