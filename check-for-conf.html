@@ -10,16 +10,14 @@
 
 
     var xhr = new XMLHttpRequest();
-xhr.addEventListener("onreadystatechange", processRequest, false);
+
 
     var file = "https://confluence-tools.swacorp.com/display/EA";
  
     xhr.open('GET', file, true);
-    
-     
-   
  
    xhr.onreadystatechange = function() {
+alert(`ready state change state is ${xhr.readystate}`);
       if (xhr.readyState === 4) {
         if (xhr.status >= 200 && xhr.status < 304) {
           alert("connection exists!");
@@ -35,6 +33,5 @@ xhr.send();
 
 
 </script>
-<body onload="doesConnectionExist()">
 <body>
 </html>
