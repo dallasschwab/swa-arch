@@ -20,7 +20,8 @@
         if (xhr.status >= 200 && xhr.status < 304) {
           alert("connection exists!");
         } else {
-          alert("connection doesn't exist!");
+          alert("connection doesn't exist!" + xhr.status);
+
         }
       }
     }
