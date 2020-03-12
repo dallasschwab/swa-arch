@@ -1,6 +1,8 @@
 <html>
+<head>
+</head>
 <body>
-
+<p> this is a line of text </p>
 <script>
 
 function doesConnectionExist() {
