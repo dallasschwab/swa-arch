@@ -7,13 +7,17 @@
 <script>
 
 (function doesConnectionExist() {
+
+
     var xhr = new XMLHttpRequest();
+xhr.addEventListener("readystatechange", processRequest, false);
+
     var file = "https://google.com/";
  
     xhr.open('HEAD', file, true);
     xhr.send();
      
-    xhr.addEventListener("readystatechange", processRequest, false);
+   
  
     function processRequest(e) {
       if (xhr.readyState == 4) {
