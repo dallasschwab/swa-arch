@@ -6,30 +6,31 @@
 
 <script>
 
-(function doesConnectionExist() {
+
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://confluence-tools.swacorp.com', true);
+
+xhr.onload = function() {
+
+alert(`Status1: ${xhr.status}`);
+};
 
 
-    var xhr = new XMLHttpRequest();
+xhr.onprogress = function() {
+
+alert(`OnProgress state2: ${xhr.readyState}`);
+
+};
 
 
-    var file = "https://confluence-tools.swacorp.com/display/EA";
- 
-    xhr.open('GET', file, true);
- 
-   xhr.onreadystatechange = function() {
-alert(`ready state change state is ${xhr.readystate}`);
-      if (xhr.readyState === 4) {
-        if (xhr.status >= 200 && xhr.status < 304) {
-          alert("connection exists!");
-        } else {
-          alert(`connection doesn't exist! ${xhr.status}`);
+xhr.onerror =  function (){
 
-        }
-      }
-    };
+alert(`Request failed with status3: ${xhr.status}`);
+};
 
-xhr.send();
-})()
+xhr.send(null);
+
+
 
 
 </script>
