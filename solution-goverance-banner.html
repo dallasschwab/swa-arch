@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  
+font-family: Segoe UI;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.active, .collapsible:hover {
+  
+  margin: auto;
+text-align: center;
+font-family: Segoe UI;
+color: #3a96dd;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  color: white;
+  margin: auto;
+text-align: left;
+font-family: Segoe UI;
+font-size: 20px;
+}
+
+.swing
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+
+ }
+
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="swing">
+<button type="button" class="collapsible">Coming soon: Solution Governance</button>
+<div class="content">
+  <p>Solution Governance, known today as ARBs, will soon expand to include three new governance options for solution reviews. ARB will still continue, but depending on solution cost/complexity, not all solutions will require an ARB.
+
+When the new Solution Goverance paradigm is ready, this page and its contents will change to ‘Solution Governance’ to better reflect changes to solution Architecture reviews.
+
+
+For questions, reach out to Katelyn Olles at <a href "mailto:katelyn.olles@wnco.com>katelyn.olles@wnco.com</a> </p>
+</div>
+
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
